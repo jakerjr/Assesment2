@@ -28,31 +28,31 @@ public class Book {
                     }
 
                     if (!data[1].isEmpty()) {
-                        author = data[1];
+                        author = data[1].trim();
                     }else {
                         author = "Book author may be missing.";
                     }
 
                     if (!data[2].isEmpty()) {
-                        publisher = data[2];
+                        publisher = data[2].trim();
                     } else {
                         publisher = "Book publisher may be missing.";
                     }
 
                     if (isDouble(data[3])) {
-                        price = data[3];
+                        price = data[3].trim();
                     } else {
                         price = "Book price may not be a numeric value.";
                     }
 
                     if (isInteger(data[4])) {
-                        pages = data[4];
+                        pages = data[4].trim();
                     } else {
                         pages = "Book price may not be a numeric value.";
                     }
 
                     if (!data[5].isEmpty()) {
-                        isbn = data[5];
+                        isbn = data[5].trim();
                     } else {
                         isbn = "Book ISBN may be missing.";
                     }
@@ -69,7 +69,7 @@ public class Book {
     private static boolean isInteger(String number){
         number.replaceAll("[^0-9]", "");
         try {
-            int test = Integer.parseInt(number);
+            int test = Integer.parseInt(number.trim());
             return true;
         } catch (NumberFormatException e){
             return false;
