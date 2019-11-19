@@ -1,0 +1,18 @@
+Learning Java - William Lane - Wiley - 12.00 - 158 - 0072263445X
+ - William Stalling -  Prentice Hall - 25.00 - 120 -  1304086641
+OOP programming - Graham Winter - 32.50 - O'Reilly - 0471974555
+Windows XP Unwired - Wei Meng Lee - 24.95 - O'Reilly - 0596005369
+Programming with Perl -  - Wiley - 19.99 - 800 - 0476887021
+Multimedia Comms - Fred Halsall -  Addison Wesley - 53.99 - 340 - 0201398184
+Guide to Networks - Tamara Dean - Course Tech - 34.50 - 64 - 1439055661
+A Guide to MySQL -Paul Barry -  - Thomson - 1418834351
+CCDA Exam Guide - Anthony Bruno -  Cisco Press - 49.95 - 232 - 0735700745
+Perl and CGI - Elizabeth Castro -  - 99.50 - 62 - 0201735687
+802.11 Security - Jon Edney and William Hal - Addison Wesley - 68.99 - 268 -  0321136209 
+Web Design - Hoel Sklar - Course Tech - 9.99 - 45 - 
+Large Scale LANs - Kevin Dooley - 39.00 - O'Reilly - 0596001509
+HTML and JavaScript: David  Gast - Wiley 12.00 -  79 - 0471383661
+Database and Web - Simon Burns - Perasons - 12Q -  302 - 0559000412
+3G wireless Networks - Clint Smith and Daniel Collins - McGraw-Hill - 695 - 8A - 007226344-X
+Wireless Hacks - Rob Weeks - 29.50 - O'Reilly - 0596101442
+Trace of Guilt - Neil Barret - 5.99 - Corgi Books - 055X215001
