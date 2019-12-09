@@ -3,6 +3,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * This class processes the data. The data are the provided file that was given to us.
+ */
 public class Book {
     private static String title;
     private static String author;
@@ -12,9 +15,14 @@ public class Book {
     private static String isbn;
     private static String info;
 
+    /**
+     * Takes in a file and processes it. If file is not found, then it catches the error.
+     * @param filename The name of the file that will be processed.
+     */
     public static void run(String filename) {
         Scanner input = new Scanner(System.in);
 
+        //No need to use a .close() method because Java 10 supports enhanced try statements
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             boolean query = false;
             System.out.println("Do you want to search for a specific author or see all books? \n<Enter the word \"author\" or \"all\">");
@@ -34,11 +42,17 @@ public class Book {
             }
             requirement(reader);
 
+        //IO exception is used to catch any errors
         } catch (IOException e) {
             System.out.println("File not found.");
         }
     }
 
+    /**
+     *This method covers the first three requirements.
+     * @param reader The reader class that was used in the run() method.
+     * @throws IOException The exception that is catched in the run() method.
+     */
     public static void requirement(BufferedReader reader) throws IOException{
         while ((info = reader.readLine()) != null) {
             String[] data = info.split("-");
@@ -46,6 +60,12 @@ public class Book {
         }
     }
 
+    /**
+     * This method covers the fourth requirement. Finds the book details with the user input of the author.
+     * @param reader The reader class that was used in the run() method.
+     * @param authorNameInput Takes in the user input. This should be an author of a book.
+     * @throws IOException The exception that is catched in the run() method.
+     */
     public static void requirement4(BufferedReader reader, String authorNameInput) throws IOException {
         while ((info = reader.readLine()) != null){
             String[] data = info.split("-");
@@ -55,6 +75,10 @@ public class Book {
         }
     }
 
+    /**
+     * Prints the data of the books.
+     * @param data Takes in an array of different Strings.
+     */
     public static void details(String[] data) {
         if (data.length != 6) {
             if (data.length > 6) {
@@ -102,6 +126,7 @@ public class Book {
                 isbn = "Book ISBN is missing.";
             }
 
+            //This is how the data would be printed
             System.out.format("%-15s %s", "Title: ", title);
             System.out.format("%-16s %s", "\nAuthor: ", author);
             System.out.format("%-16s %s", "\nPublisher: ", publisher);
@@ -112,6 +137,11 @@ public class Book {
         }
     }
 
+    /**
+     * Checks weather the String is an Integer.
+     * @param number Takes in a String.
+     * @return Will return false if it cant be converted to a valid number.
+     */
     public static boolean isInteger(String number) {
         try {
             int checkInteger = Integer.parseInt(number.trim());
@@ -121,6 +151,11 @@ public class Book {
         }
     }
 
+    /**
+     * Checks weather the String is an Double.
+     * @param number Takes in a String.
+     * @return Will return false if it cant be converted to a valid number.
+     */
     public static boolean isDouble(String number) {
         try {
             double checkDouble = Double.parseDouble(number);
